@@ -1,123 +1,161 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html><head>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PARSIMONS Lab</title>
 
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f7fa;
+    color: #333;
+}
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: white;
+    max-width: 1100px;
+    margin: 0 auto;
+}
 
-<meta content="text/html; charset=utf-8" http-equiv="content-type">
-<title>PARSIMONS:Passive And Reliable Seismic Imaging and Monitoring Of the Near Surface</title><link rel="stylesheet" href="teststyle.css" type="text/css"></head><body>
-<table style="text-align: left; height: 149px; margin-left: auto; width: 1045px; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
-  <tbody>
-    <tr>
-      <td style="vertical-align: top; width: 361px;"><big><big><span style="font-weight: bold;"><br></span></big></big>
+header h1 {
+    font-size: 22px;
+    margin: 0;
+}
 
-      <h4 style="width: 390px;"><big><big><span style="font-weight: bold;">
-PARSIMONS:Passive And Reliable Seismic Imaging and Monitoring Of the Near Surface </span></big></big></h4>
-      <h4 style="width: 390px;"><big><big><span style="font-weight: bold;">
-近地表结构被动源地震成像及监测 </span></big></big></h4>
+header p {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+    color: #555;
+}
 
-      <big><big><span style="font-weight: bold;">
-      
-      </span></big></big>
-      <p><big><big><small>特色:被动源、经济、可靠、环保</small></big></big></p>
-      <p><big><big>
-      <small>Parsimony</small><span style="font-weight: bold;"></span></big></big></p>
+header img {
+    max-width: 45%;
+    height: auto;
+}
 
-      <p><big><big><span style="font-weight: bold;">
-      </span></big></big></p>
-      </td>
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #0077b6;
+}
 
-      <td style="vertical-align: top; width: 670px;"><img style="width: 668px; height: 317px;" alt="background" src="head.png"><br>
-      </td>
-    </tr>
-  </tbody>
-</table>
-<div style="text-align: center;">
-<br>
+nav a {
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #023e8a;
+}
+
+.container {
+    width: 95%;
+    max-width: 1100px;
+    margin: 20px auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 20px;
+}
+
+.section {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.section-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-left: 4px solid #0077b6;
+    padding-left: 10px;
+}
+
+.highlight img {
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #777;
+}
+
+@media (max-width: 800px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div>
+        <h1>PARSIMONS Lab</h1>
+        <p>Passive And Reliable Seismic Imaging and Monitoring Of the Near Surface</p>
+        <p>利用天然地震波揭示地球内部结构，深化对地球的认识并助力保护我们的星球</p>
+    </div>
+    <img src="head.png" alt="Lab banner">
+</header>
+
+<nav>
+    <a href="index.html">主页</a>
+    <a href="members.html">成员</a>
+    <a href="research.html">研究方向</a>
+    <a href="publications.html">成果</a>
+    <a href="fieldtrips.html">野外活动</a>
+    <a href="contact.html">联系我们</a>
+</nav>
+
+<div class="container">
+
+    <div class="grid">
+
+        <div class="section">
+            <div class="section-title">研究简介</div>
+            <p>
+近地表（&lt;10公里）是地球大气圈、水圈、生物圈与固体地球相互作用的关键区域，也是物质与能量交换的重要场所。
+建立其精细结构模型对油气与矿产资源勘探、地震孕育机制及灾害评估具有重要意义。
+            </p>
+            <p>
+本研究组依托南海及周缘区域的固定与流动地震台阵观测数据，发展高分辨率被动源成像与监测方法，获取地下结构及其时空变化信息，进而服务于构造演化、成矿机制及地震过程研究。
+            </p>
+        </div>
+
+        <div class="section highlight">
+            <div class="section-title">最新研究</div>
+            <p>
+利用密集台阵接收函数成像，我们获得了南岭成矿带高分辨率莫霍面及壳内间断面结构。
+结果表明郴州-临武断裂附近莫霍面转换波振幅较弱，可能指示较厚的转换带，并与地幔物质上涌及钨锡成矿过程相关。
+相关成果发表于 Geophysical Research Letters。
+            </p>
+            <img src="rf.jpg" alt="RF result">
+            <p style="font-size:13px;color:#666;">南岭成矿带线状台阵接收函数成像结果</p>
+        </div>
+
+    </div>
+
 </div>
 
-<table style="text-align: left; width: 1090px; margin-left: auto; margin-right: auto; height: 43px;" border="0" cellpadding="2" cellspacing="2">
-  <tbody>
-    <tr>
-      <td style="vertical-align: top; text-align: center; width: 99px; background-color: rgb(204, 255, 255);"><a href="index.html"><big><span style="font-weight: bold;">主页</span></big></a><br>
-      </td>
-
-      <td style="vertical-align: top; width: 176px; text-align: center; background-color: rgb(204, 255, 255);"><a href="members.html"><big><span style="font-weight: bold;">成员</span></big></a><br>
-      </td>
-
-      <td style="vertical-align: top; width: 176px; text-align: center; background-color: rgb(204, 255, 255);"><a href="research.html"><big><span style="font-weight: bold;">研究方向</span></big></a><br>
-      </td>
-
-      <td style="vertical-align: top; width: 175px; text-align: center; background-color: rgb(204, 255, 255);"><a href="publications.html"><big><span style="font-weight: bold;">成果介绍</span></big></a><br>
-      </td>
-
-      <td style="vertical-align: top; width: 176px; text-align: center; background-color: rgb(204, 255, 255);"><a href="fieldtrips.html"><big><span style="font-weight: bold;">野外活动</span></big></a><br>
-      </td>
-
-      <td style="vertical-align: top; width: 160px; text-align: center; background-color: rgb(204, 255, 255);"><a href="contact.html"><big><span style="font-weight: bold;">联系我们</span></big></a><br>
-      </td>
-    </tr>
-  </tbody>
-</table>
-<div style="text-align: center;">
-<br>
-
+<div class="footer">
+    © PARSIMONS Lab
 </div>
-<table style="text-align: left; height: 226px; margin-left: auto; width: 1076px; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
-  <tbody>
-    <tr>
-      <td style="vertical-align: top; width: 550px;">
-      <!-- <h4><big><span style="font-weight: bold;">简介 <span class=""> </big></h4> -->
-      <p>
-近地表（<10公里）是地球大气圈、水圈、生物圈及固体地球相互作用<br>
-及物质交换的主要场所，建立其结构模型对油气及矿产资源探索、地震<br>
-机制、地震灾害等研究至关重要。本研究组致力于利用南海及周缘的固<br>
-定及流动地震仪连续记录的地面震动数据，发展新的近地表成像及监测<br>
-方法，获得高精度的地下结构及其变化，进而研究构造演化、成矿机制、<br>
-地震源区结构及发震构造等。 </p>
-      </td>
 
-      <td colspan="1" rowspan="2" style="vertical-align: top; width: 350px;">
-      <h4><big style="font-weight: bold;">最新研究</big></h4>
-      <!-- <br> -->
-      <p>
-    研究组利用密集台阵接收函数成像方法获得南岭成矿带高精度莫霍面及壳内间断面结构模型。结果显示该区域郴州-临武断裂周围莫霍面转换波振幅较小，对应着莫霍面转换厚度较大，可能与地幔物质侵入促进钨锡矿成矿有关。相关结果发表在Geophysical Research Letters上。
-      </p>
-      <div style="text-align: center;">
-      <p><img style="width: 550px; height: 305px;" alt="rf" src="rf.jpg" align="right"></p>
-      <div style="text-align: bottom;">
-      <p>南岭成矿带线状台阵接收函数</p>
-      </div>
-      </div>
-      </td>
-    </tr>
-
-
-<!--     <tr>
-      <td style="vertical-align: top; width: 517px;">
-      <h4><big style="font-weight: bold;">Software development</big></h4>
-
-      
-      
-      <p><span style="font-weight: bold;">tomoWDD</span>: A Fortran based program for sparsity constraint double difference tomography in wavelet domain.</p>
-
-      
-      <p><span style="font-weight: bold;">DSurfTomo</span>: A Fortran based program for direct inversion of surface wave dispersion data.</p>
-
-      
-      <p><span style="font-weight: bold;">JointBS</span>: A Fortran based program for jointly inverting body and surface wave data.</p>
-
-      
-      <p><span style="font-weight: bold;">RupImgCSwave</span>: A Matlab based program for rupture imaging in wavelet domain.</p>
-
-      </td>
-    </tr> -->
-
-  </tbody>
-</table>
-<div style="text-align: center;">
-<br>
-
-
-
-</div>
-</body></html>
+</body>
+</html>
