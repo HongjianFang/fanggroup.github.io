@@ -19,31 +19,39 @@
         padding: 20px;
     }
 
-    /* Banner with overlay */
-    .banner {
-        position: relative;
-        background: url('head.png') center/cover no-repeat;
-        height: 250px;
-        border-radius: 10px;
+    /* Header two-column layout */
+    .header {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding-left: 30px;
-        color: #fff;
-        text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 20px;
+        gap: 20px;
     }
-    .banner h1 {
+    .header-text {
+        flex: 1 1 400px;
+    }
+    .header-text h1 {
         margin: 0;
         font-size: 28px;
         font-weight: bold;
     }
-    .banner h2 {
+    .header-text h2 {
         margin: 5px 0 0 0;
         font-size: 20px;
         font-weight: bold;
     }
-    .banner small {
+    .header-text small {
         font-size: 14px;
+    }
+    .header-image {
+        flex: 1 1 300px;
+        text-align: right;
+    }
+    .header-image img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        border-radius: 8px;
     }
 
     nav {
@@ -79,19 +87,21 @@
         gap: 20px;
     }
     .text-block {
-        flex: 1 1 45%;
+        flex: 1 1 100%;
         min-width: 300px;
     }
     .text-block p {
         margin-bottom: 15px;
     }
     .image-block {
-        flex: 1 1 50%;
+        flex: 1 1 100%;
         min-width: 300px;
         text-align: center;
+        margin-top: 20px;
     }
     .image-block img {
-        width: 100%;
+        width: 80%;
+        max-width: 550px;
         height: auto;
         border-radius: 8px;
     }
@@ -106,11 +116,16 @@
 
 <div class="container">
 
-    <!-- Banner -->
-    <div class="banner">
-        <h1>PARSIMONS: Passive And Reliable Seismic Imaging and Monitoring Of the Near Surface</h1>
-        <h2>近地表结构被动源地震成像及监测</h2>
-        <small>特色: 被动源、经济、可靠、环保</small>
+    <!-- Header -->
+    <div class="header">
+        <div class="header-text">
+            <h1>PARSIMONS: Passive And Reliable Seismic Imaging and Monitoring Of the Near Surface</h1>
+            <h2>近地表结构被动源地震成像及监测</h2>
+            <small>特色: 被动源、经济、可靠、环保</small>
+        </div>
+        <div class="header-image">
+            <img src="head.png" alt="Banner">
+        </div>
     </div>
 
     <!-- Navigation -->
@@ -129,10 +144,6 @@
             <p>近地表（<10公里）是地球大气圈、水圈、生物圈及固体地球相互作用及物质交换的主要场所，建立其结构模型对油气及矿产资源探索、地震机制、地震灾害等研究至关重要。</p>
             <p>本研究组致力于利用南海及周缘的固定及流动地震仪连续记录的地面震动数据，发展新的近地表成像及监测方法，获得高精度的地下结构及其变化，进而研究构造演化、成矿机制、地震源区结构及发震构造等。</p>
         </div>
-        <div class="image-block">
-            <img src="rf.jpg" alt="南岭成矿带线状台阵接收函数">
-            <div class="caption">南岭成矿带线状台阵接收函数</div>
-        </div>
     </section>
 
     <!-- Latest Research -->
@@ -140,6 +151,14 @@
         <div class="text-block">
             <h3>最新研究</h3>
             <p>研究组利用密集台阵接收函数成像方法获得南岭成矿带高精度莫霍面及壳内间断面结构模型。结果显示该区域郴州-临武断裂周围莫霍面转换波振幅较小，对应着莫霍面转换厚度较大，可能与地幔物质侵入促进钨锡矿成矿有关。相关结果发表在 Geophysical Research Letters 上。</p>
+        </div>
+    </section>
+
+    <!-- RF Figure at the end -->
+    <section>
+        <div class="image-block">
+            <img src="rf.jpg" alt="南岭成矿带线状台阵接收函数">
+            <div class="caption">南岭成矿带线状台阵接收函数</div>
         </div>
     </section>
 
