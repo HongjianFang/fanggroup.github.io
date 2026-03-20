@@ -2,94 +2,101 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PARSIMONS Lab - Research</title>
-
+<title>PARSIMONS: 研究方向</title>
 <style>
-body {font-family: Arial, sans-serif; margin:0; background:#f5f7fa; color:#333;}
-header {display:flex; justify-content:space-between; align-items:center; padding:20px; background:white; max-width:1100px; margin:0 auto;}
-header h1 {margin:0; font-size:22px;}
-header p {margin:5px 0 0 0; font-size:14px; color:#555;}
-header img {max-width:45%;}
-nav {display:flex; justify-content:center; background:#0077b6; flex-wrap:wrap;}
-nav a {color:white; padding:12px 20px; text-decoration:none; font-weight:bold;}
-nav a:hover {background:#023e8a;}
-.container {max-width:1100px; margin:20px auto; padding:0 10px; display:flex; flex-wrap:wrap; gap:20px;}
-.section {background:white; padding:15px; border-radius:8px; box-shadow:0 1px 4px rgba(0,0,0,0.08); flex:1 1 48%; box-sizing:border-box;}
-.section-title {font-size:16px; margin-bottom:8px; border-left:4px solid #0077b6; padding-left:8px; font-weight:bold;}
-.section img {max-width:100%; margin-top:8px; border-radius:4px;}
-.section p {margin:6px 0;}
-.footer {text-align:center; padding:20px; font-size:14px; color:#777;}
-@media(max-width:800px) {
-  .section {flex:1 1 100%;}
-  header {flex-direction:column; align-items:center;}
-  header img {max-width:90%; margin-top:10px;}
-  nav {flex-direction:column;}
-  nav a {width:100%; text-align:center;}
-}
-</style>
+body { font-family: "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif; line-height:1.6; margin:0; padding:0; background:#f8f9fa; color:#333; }
+.container { max-width:1100px; margin:0 auto; padding:20px; }
+.header { display:flex; flex-wrap:wrap; align-items:center; margin-bottom:20px; gap:20px; }
+.header-text { flex:1 1 400px; }
+.header-text h1 { margin:0; font-size:28px; font-weight:bold; }
+.header-text h2 { margin:5px 0 0 0; font-size:20px; font-weight:bold; }
+.header-text small { font-size:14px; }
+.header-image { flex:1 1 300px; text-align:right; }
+.header-image img { width:100%; max-width:300px; height:auto; border-radius:8px; }
 
+nav { margin:20px 0; display:flex; justify-content:center; flex-wrap:wrap; background-color:#ccfffd; border-radius:8px; overflow:hidden; }
+nav a { text-decoration:none; color:#333; padding:12px 20px; display:block; font-weight:bold; transition:0.3s; }
+nav a:hover { background-color:#00c0b5; color:#fff; }
+nav a.active { background-color:#00a89f; color:#fff; }
+
+section { display:flex; flex-wrap:wrap; margin-top:30px; gap:20px; }
+.text-block { flex:1 1 100%; min-width:300px; }
+.text-block h3 { margin-top:20px; }
+.image-block { flex:1 1 100%; min-width:300px; text-align:center; margin-top:20px; }
+.image-block img { width:80%; max-width:600px; height:auto; border-radius:8px; }
+.caption { font-size:14px; color:#555; margin-top:5px; }
+</style>
 </head>
 <body>
 
-<header>
-  <div>
-    <h1>PARSIMONS Lab</h1>
-    <p>Passive And Reliable Seismic Imaging and Monitoring Of the Near Surface</p>
-  </div>
-  <img src="head.png" alt="Lab Banner">
-</header>
-
-<nav>
-  <a href="index.html">主页</a>
-  <a href="members.html">成员</a>
-  <a href="research.html">研究方向</a>
-  <a href="publications.html">成果</a>
-  <a href="fieldtrips.html">野外活动</a>
-  <a href="contact.html">联系我们</a>
-</nav>
-
 <div class="container">
 
-  <div class="section">
-    <div class="section-title">背景噪声成像方法研究</div>
-    <img src="DirectInversion.png" alt="Direct Inversion">
-    <p>发展基于射线追踪的面波数据直接反演方法，该方法可以考虑短周期面波的非大圆路径传播效应，可获得更加可靠的剪切波波速结构模型 (Fang et al., 2015)。</p>
-  </div>
+    <!-- Header -->
+    <div class="header">
+        <div class="header-text">
+            <h1>PARSIMONS: Passive And Reliable Seismic Imaging and Monitoring Of the Near Surface</h1>
+            <h2>近地表结构被动源地震成像及监测</h2>
+            <small>特色: 被动源、经济、可靠、环保</small>
+        </div>
+        <div class="header-image">
+            <img src="head.png" alt="Banner">
+        </div>
+    </div>
 
-  <div class="section">
-    <div class="section-title">密集台阵面波成像在盆地、成矿带、断裂带等区域的应用</div>
-    <img src="ANT_SouthChina.jpg" alt="Application">
-    <p>面波直接反演方法已在不同尺度结构成像中获得广泛应用，如在南岭成矿带的应用中发现凡口矿周缘6公里以下深度存在高速异常体（Vs>3.6km/s)，推测为基性侵入岩体 (Li, Fang et al., 2023)。</p>
-  </div>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">主页</a>
+        <a href="members.html">成员</a>
+        <a href="research.html" class="active">研究方向</a>
+        <a href="publications.html">成果介绍</a>
+        <a href="fieldtrips.html">野外活动</a>
+        <a href="contact.html">联系我们</a>
+    </nav>
 
-  <div class="section">
-    <div class="section-title">密集台阵接收函数成像在成矿带、断裂带等区域的应用</div>
-    <img src="RF_Nanling.jpg" alt="Receiver Function">
-    <p>密集台阵接收函数成像显示成矿带、断裂的莫霍面及壳内间断面结构，为研究成矿背景及区域构造演化提供证据 (Bi, Fang et al., 2024)。</p>
-  </div>
+    <!-- Research Sections -->
+    <section>
+        <div class="text-block">
+            <h3>1）背景噪声成像方法研究</h3>
+            <p>发展基于射线追踪的面波数据直接反演方法，可获得更加可靠的剪切波波速结构模型 (Fang et al., 2015)。</p>
+        </div>
+        <div class="image-block">
+            <img src="DirectInversion.png" alt="Direct Inversion">
+            <div class="caption">面波直接反演示意图</div>
+        </div>
 
-  <div class="section">
-    <div class="section-title">利用背景噪声监测地下结构变化</div>
-    <img src="ANM_SouthChina.jpg" alt="Monitoring">
-    <p>基于背景噪声监测区域速度结构变化 (Luo, Fang et al., in prep)。</p>
-  </div>
+        <div class="text-block">
+            <h3>2）密集台阵面波成像应用</h3>
+            <p>在南岭成矿带等区域的应用发现深部高速异常体（Vs>3.6 km/s），推测为基性侵入岩体 (Li, Fang et al., 2023)。</p>
+        </div>
+        <div class="image-block">
+            <img src="ANT_SouthChina.jpg" alt="ANT Application">
+            <div class="caption">密集台阵面波成像示意</div>
+        </div>
 
-  <div class="section">
-    <div class="section-title">体波面波联合反演</div>
-    <img src="JointInversion_Socal3.jpg" alt="Joint Inversion">
-    <p>基于体波面波数据互补性的联合反演方法及其在美国南加州地区的应用 (Fang et al., 2016)。</p>
-  </div>
+        <div class="text-block">
+            <h3>3）密集台阵接收函数成像应用</h3>
+            <p>显示成矿带、断裂的莫霍面及壳内间断面结构，为研究成矿背景及区域构造演化提供证据 (Bi, Fang et al., 2024)。</p>
+        </div>
+        <div class="text-block">
+            <h3>4）利用背景噪声监测地下结构变化</h3>
+            <p>基于背景噪声监测区域速度结构变化 (Luo, Fang et al., in prep)。</p>
+        </div>
 
-  <div class="section">
-    <div class="section-title">基于泰森多边形参数化的成像方法</div>
-    <img src="PV_body2.png" alt="Poisson Voronoi Imaging">
-    <p>泰森多边形参数化可避免传统成像方法中阻尼及平滑规则项的选取，可以在任意区域根据数据约束加密，获得更稳定的模型。</p>
-  </div>
+        <div class="text-block">
+            <h3>5）体波-面波联合反演</h3>
+            <p>联合反演方法及其在美国南加州地区的应用 (Fang et al., 2016)。</p>
+        </div>
+        <div class="text-block">
+            <h3>6）泰森多边形参数化成像方法</h3>
+            <p>可避免阻尼及平滑选择，在任意区域根据数据约束加密，获得更稳定模型。</p>
+        </div>
+
+        <div class="image-block">
+            <img src="JointInversion_Socal3.jpg" alt="Joint Inversion">
+            <div class="caption">体波-面波联合反演示意</div>
+        </div>
+    </section>
 
 </div>
-
-<div class="footer">© PARSIMONS Lab</div>
-
 </body>
 </html>

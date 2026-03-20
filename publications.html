@@ -2,86 +2,73 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PARSIMONS Lab - Publications</title>
-
+<title>PARSIMONS: 成果介绍</title>
 <style>
-body {font-family: Arial, sans-serif;margin:0;background:#f5f7fa;color:#333;}
-header {display:flex;justify-content:space-between;align-items:center;padding:20px;background:white;max-width:1100px;margin:0 auto;}
-header h1 {margin:0;font-size:22px;}
-header p {margin:5px 0 0 0;font-size:14px;color:#555;}
-header img {max-width:45%;}
-nav {display:flex;justify-content:center;background:#0077b6;}
-nav a {color:white;padding:12px 20px;text-decoration:none;font-weight:bold;}
-nav a:hover {background:#023e8a;}
-.container {max-width:1100px;margin:20px auto;padding:0 10px;}
-.section {background:white;padding:18px;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,0.08);margin-bottom:20px;}
-.section-title {font-size:18px;margin-bottom:12px;border-left:4px solid #0077b6;padding-left:10px;}
-.paper {margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid #eee;}
-.paper:last-child {border-bottom:none;}
-.paper b {color:#000;}
-.year {font-size:16px;font-weight:bold;margin:20px 0 10px 0;}
-.footer {text-align:center;padding:20px;font-size:14px;color:#777;}
+body { font-family: "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif; line-height:1.6; margin:0; padding:0; background:#f8f9fa; color:#333; }
+.container { max-width:1100px; margin:0 auto; padding:20px; }
+.header { display:flex; flex-wrap:wrap; align-items:center; margin-bottom:20px; gap:20px; }
+.header-text { flex:1 1 400px; }
+.header-text h1 { margin:0; font-size:28px; font-weight:bold; }
+.header-text h2 { margin:5px 0 0 0; font-size:20px; font-weight:bold; }
+.header-text small { font-size:14px; }
+.header-image { flex:1 1 300px; text-align:right; }
+.header-image img { width:100%; max-width:300px; height:auto; border-radius:8px; }
+
+nav { margin:20px 0; display:flex; justify-content:center; flex-wrap:wrap; background-color:#ccfffd; border-radius:8px; overflow:hidden; }
+nav a { text-decoration:none; color:#333; padding:12px 20px; display:block; font-weight:bold; transition:0.3s; }
+nav a:hover { background-color:#00c0b5; color:#fff; }
+nav a.active { background-color:#00a89f; color:#fff; }
+
+section { margin-top:30px; }
+.pub-item { margin-bottom:20px; }
+.pub-item a { color:#0077cc; text-decoration:none; }
+.pub-item a:hover { text-decoration:underline; }
+.pub-item small { color:#555; }
 </style>
 </head>
-
 <body>
-
-<header>
-  <div>
-    <h1>PARSIMONS Lab</h1>
-    <p>Passive And Reliable Seismic Imaging and Monitoring Of the Near Surface</p>
-  </div>
-  <img src="head.png">
-</header>
-
-<nav>
-  <a href="index.html">主页</a>
-  <a href="members.html">成员</a>
-  <a href="research.html">研究方向</a>
-  <a href="publications.html">成果</a>
-  <a href="fieldtrips.html">野外活动</a>
-  <a href="contact.html">联系我们</a>
-</nav>
 
 <div class="container">
 
-  <div class="section">
-    <div class="section-title">代表性论文</div>
+    <!-- Header -->
+    <div class="header">
+        <div class="header-text">
+            <h1>PARSIMONS: Passive And Reliable Seismic Imaging and Monitoring Of the Near Surface</h1>
+            <h2>近地表结构被动源地震成像及监测</h2>
+            <small>特色: 被动源、经济、可靠、环保</small>
+        </div>
+        <div class="header-image">
+            <img src="head.png" alt="Banner">
+        </div>
+    </div>
 
-    <div class="year">2024</div>
-    <div class="paper"><b>Bi et al. (2024)</b> – Seismic Evidence for a Transcrustal Magmatic Pathway. <i>GRL</i></div>
-    <div class="paper"><b>毕昊 等 (2024)</b> – 短周期密集台阵接收函数成像揭示三维地壳结构. <i>地球物理学报</i></div>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">主页</a>
+        <a href="members.html">成员</a>
+        <a href="research.html">研究方向</a>
+        <a href="publications.html" class="active">成果介绍</a>
+        <a href="fieldtrips.html">野外活动</a>
+        <a href="contact.html">联系我们</a>
+    </nav>
 
-    <div class="year">2023</div>
-    <div class="paper"><b>Li et al. (2023)</b> – Ambient Noise Tomography with Nodal Array. <i>SRL</i></div>
-    <div class="paper"><b>方洪健 等 (2023)</b> – 体波与面波联合成像进展. <i>地球与行星物理论评</i></div>
-    <div class="paper"><b>Fang (2023)</b> – Seismic Noise Correlations. <i>SRL</i></div>
-
-    <div class="year">2022</div>
-    <div class="paper"><b>Fang et al. (2022)</b> – Traveltime Tomography Southern California. <i>JGR</i></div>
-
-    <div class="year">2019</div>
-    <div class="paper"><b>Fang et al. (2019)</b> – Parsimonious Seismic Tomography. <i>SRL</i></div>
-    <div class="paper"><b>Mao et al. (2019)</b> – Travel-time Changes Analysis. <i>GJI</i></div>
-
-    <div class="year">2016–2015</div>
-    <div class="paper"><b>Li et al. (2016)</b> – 3D Near-Surface Structure. <i>SRL</i></div>
-    <div class="paper"><b>Fang et al. (2016)</b> – Joint Inversion Method. <i>JGR</i></div>
-    <div class="paper"><b>Liu et al. (2018)</b> – Ambient Noise Monitoring. <i>JAG</i></div>
-    <div class="paper"><b>Fang et al. (2015)</b> – Surface Wave Inversion. <i>GJI</i></div>
-
-  </div>
-
-  <div class="section">
-    <div class="section-title">完整论文列表</div>
-    <p>完整发表记录请参考：
-    <a href="https://scholar.google.com/citations?hl=en&user=kUqxjY4AAAAJ" target="_blank">Google Scholar</a></p>
-  </div>
+    <!-- Publications -->
+    <section>
+        <div class="pub-item">
+            <p>Bi, H., Fang, H., Zhang, P., Sudholz, Z., Miller, M. S., Yu, P., & Gao, R. (2024). Seismic Evidence for a Transcrustal Magmatic Pathway Contributing to Critical Metal Deposits. Geophysical Research Letters, 51(1). <a href="https://doi.org/10.1029/2023gl104935">DOI</a></p>
+        </div>
+        <div class="pub-item">
+            <p>毕昊, 方洪健, 杨振, 高锐. (2024). 短周期密集台阵接收函数成像方法揭示南岭中部丹霞盆地及邻区三维地壳结构. 地球物理学报, 67(6): 2322-2335, DOI: 10.6038/cjg2023R0068</p>
+        </div>
+        <div class="pub-item">
+            <p>Li, M., Fang, H., & Gao, R. (2023). Ambient Noise Tomography Using a Nodal Seismic Array Reveals Evidence for Igneous Intrusion Contributed to Ore Deposits in South China. Seismological Research Letters. <a href="https://doi.org/10.1785/0220220401">DOI</a></p>
+        </div>
+        <!-- Add all remaining publications here in same format -->
+        <div class="pub-item">
+            <p>完整的文章发表列表可参考 Hongjian Fang 的 <a href="https://scholar.google.com/citations?hl=en&user=kUqxjY4AAAAJ" target="_blank">Google Scholar</a></p>
+        </div>
+    </section>
 
 </div>
-
-<div class="footer">© PARSIMONS Lab</div>
-
 </body>
 </html>

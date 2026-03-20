@@ -2,190 +2,71 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PARSIMONS Lab</title>
-
+<title>PARSIMONS: 成员</title>
 <style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f5f7fa;
-    color: #333;
-}
+body { font-family: "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif; line-height: 1.6; margin:0; padding:0; background:#f8f9fa; color:#333; }
+.container { max-width:1100px; margin:0 auto; padding:20px; }
+.header { display:flex; flex-wrap:wrap; align-items:center; margin-bottom:20px; gap:20px; }
+.header-text { flex:1 1 400px; }
+.header-text h1 { margin:0; font-size:28px; font-weight:bold; }
+.header-text h2 { margin:5px 0 0 0; font-size:20px; font-weight:bold; }
+.header-text small { font-size:14px; }
+.header-image { flex:1 1 300px; text-align:right; }
+.header-image img { width:100%; max-width:300px; height:auto; border-radius:8px; }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background: white;
-    max-width: 1100px;
-    margin: 0 auto;
-}
+nav { margin:20px 0; display:flex; justify-content:center; flex-wrap:wrap; background-color:#ccfffd; border-radius:8px; overflow:hidden; }
+nav a { text-decoration:none; color:#333; padding:12px 20px; display:block; font-weight:bold; transition:0.3s; }
+nav a:hover { background-color:#00c0b5; color:#fff; }
+nav a.active { background-color:#00a89f; color:#fff; }
 
-header h1 {
-    font-size: 22px;
-    margin: 0;
-}
-
-header img {
-    max-width: 45%;
-    height: auto;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: #0077b6;
-}
-
-nav a {
-    color: white;
-    padding: 12px 20px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    background-color: #023e8a;
-}
-
-.container {
-    width: 95%;
-    max-width: 1100px;
-    margin: 20px auto;
-}
-
-.section-title {
-    font-size: 20px;
-    margin: 25px 0 15px 0;
-    border-left: 4px solid #0077b6;
-    padding-left: 10px;
-}
-
-.member {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 20px;
-    background: white;
-    padding: 12px;
-    border-radius: 8px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
-}
-
-.member img {
-    width: 110px;
-    height: 140px;
-    object-fit: cover;
-    border-radius: 6px;
-}
-
-.member-info {
-    flex: 1;
-}
-
-.timeline p {
-    margin: 8px 0;
-    padding-left: 10px;
-    border-left: 3px solid #ccc;
-}
-
-.undergrad {
-    background: #fafafa;
-    padding: 10px;
-    border-radius: 6px;
-    font-size: 14px;
-    color: #555;
-}
-
-.footer {
-    text-align: center;
-    padding: 20px;
-    font-size: 14px;
-    color: #777;
-}
+section { display:flex; flex-wrap:wrap; margin-top:30px; gap:20px; }
+.text-block { flex:1 1 100%; min-width:300px; }
+.text-block p { margin-bottom:15px; }
+.image-block { flex:1 1 100%; min-width:300px; text-align:center; margin-top:20px; }
+.image-block img { width:80%; max-width:400px; height:auto; border-radius:8px; }
+.caption { font-size:14px; color:#555; margin-top:5px; }
 </style>
 </head>
-
 <body>
-
-<header>
-    <div>
-        <h1>PARSIMONS Lab</h1>
-        <p>利用天然地震波揭示地球内部结构，深化对地球的认识并助力保护我们的星球</p>
-    </div>
-    <img src="head.png" alt="Lab banner">
-</header>
-
-<nav>
-    <a href="index.html">主页</a>
-    <a href="members.html">成员</a>
-    <a href="research.html">研究方向</a>
-    <a href="publications.html">成果</a>
-    <a href="fieldtrips.html">野外活动</a>
-    <a href="contact.html">联系我们</a>
-</nav>
 
 <div class="container">
 
-    <div class="section-title">团队成员</div>
-
-    <div class="member">
-        <img src="fhj.jpg">
-        <div class="member-info">
-            <b>方洪健</b><br>
-            Email: fanghj23 at mail2.sysu.edu.cn<br>
-            Seismic tomography, Earthquake detection, Array analysis
+    <!-- Header -->
+    <div class="header">
+        <div class="header-text">
+            <h1>PARSIMONS: Passive And Reliable Seismic Imaging and Monitoring Of the Near Surface</h1>
+            <h2>近地表结构被动源地震成像及监测</h2>
+            <small>特色: 被动源、经济、可靠、环保</small>
+        </div>
+        <div class="header-image">
+            <img src="head.png" alt="Banner">
         </div>
     </div>
 
-    <div class="member">
-        <img src="zhanghan.jpg">
-        <div class="member-info">
-            <b>张晗</b><br>
-            Ambient noise tomography, Body wave extraction
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">主页</a>
+        <a href="members.html" class="active">成员</a>
+        <a href="research.html">研究方向</a>
+        <a href="publications.html">成果介绍</a>
+        <a href="fieldtrips.html">野外活动</a>
+        <a href="contact.html">联系我们</a>
+    </nav>
+
+    <!-- Members -->
+    <section>
+        <div class="text-block">
+            <h3>课题组成员</h3>
+            <p><b>方洪健 (Hongjian Fang)</b> – 课题组负责人，博士生导师，研究方向：近地表成像、地震体波与面波联合成像。</p>
+            <p>成员包括硕士生、博士生及博士后研究人员，活跃于南岭、华南及周缘地区的野外观测及数据分析工作。</p>
         </div>
-    </div>
 
-    <div class="member">
-        <img src="lwx.png">
-        <div class="member-info">
-            <b>罗万鑫</b><br>
-            Ambient noise monitoring
+        <div class="image-block">
+            <img src="members.jpg" alt="课题组成员合影">
+            <div class="caption">课题组成员合影</div>
         </div>
-    </div>
-
-    <div class="member">
-        <img src="kwj.png">
-        <div class="member-info">
-            <b>康伟杰</b><br>
-            In-situ Vp/Vs measurement
-        </div>
-    </div>
-
-    <div class="section-title">已毕业研究生</div>
-    <div class="timeline">
-        <p><b>范方</b>（2020–2022）— 山东菏泽地震监测中心</p>
-        <p><b>段超</b>（2021–2024）— 南方航空</p>
-        <p><b>欧阳凯</b>（2022–2025）— 江西吉安生态环境局</p>
-    </div>
-
-    <div class="section-title">联合指导研究生</div>
-    <div class="timeline">
-        <p><b>毕昊</b>（2020–2023）— 香港EGS-Survey</p>
-        <p><b>李明芮</b>（2020–2023）— 帝国理工学院</p>
-    </div>
-
-    <div class="section-title">本科毕业生</div>
-    <div class="undergrad">
-        杨书菊（中山大学研究生），向宥羽（中国科学技术大学研究生）
-    </div>
+    </section>
 
 </div>
-
-<div class="footer">
-    © PARSIMONS Lab
-</div>
-
 </body>
 </html>

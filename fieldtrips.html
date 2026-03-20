@@ -1,70 +1,79 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-<meta content="text/html; charset=utf-8" http-equiv="content-type">
-<title>PARSIMONS: Passive And Reliable Seismic Imaging and Monitoring Of the Near Surface</title>
-<link rel="stylesheet" href="teststyle.css" type="text/css">
+<meta charset="UTF-8">
+<title>PARSIMONS: 野外活动</title>
+<style>
+body { font-family: "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif; line-height:1.6; margin:0; padding:0; background:#f8f9fa; color:#333; }
+.container { max-width:1100px; margin:0 auto; padding:20px; }
+.header { display:flex; flex-wrap:wrap; align-items:center; margin-bottom:20px; gap:20px; }
+.header-text { flex:1 1 400px; }
+.header-text h1 { margin:0; font-size:28px; font-weight:bold; }
+.header-text h2 { margin:5px 0 0 0; font-size:20px; font-weight:bold; }
+.header-text small { font-size:14px; }
+.header-image { flex:1 1 300px; text-align:right; }
+.header-image img { width:100%; max-width:300px; height:auto; border-radius:8px; }
+
+nav { margin:20px 0; display:flex; justify-content:center; flex-wrap:wrap; background-color:#ccfffd; border-radius:8px; overflow:hidden; }
+nav a { text-decoration:none; color:#333; padding:12px 20px; display:block; font-weight:bold; transition:0.3s; }
+nav a:hover { background-color:#00c0b5; color:#fff; }
+nav a.active { background-color:#00a89f; color:#fff; }
+
+section { display:flex; flex-wrap:wrap; gap:20px; margin-top:30px; }
+.trip { flex:1 1 300px; background:#fff; border-radius:8px; padding:10px; box-shadow:0 0 6px rgba(0,0,0,0.1); text-align:center; }
+.trip img { width:100%; height:auto; border-radius:6px; }
+.trip p { margin-top:5px; font-size:14px; color:#555; font-weight:bold; }
+</style>
 </head>
 <body>
 
-<!-- Header -->
-<table style="text-align: left; height: 149px; margin-left: auto; width: 1045px; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
-  <tbody>
-    <tr>
-      <td style="vertical-align: top; width: 361px;">
-        <h4 style="width: 390px;"><b>PARSIMONS: Passive And Reliable Seismic Imaging and Monitoring Of the Near Surface</b></h4>
-        <h4 style="width: 390px;"><b>近地表结构被动源地震成像及监测</b></h4>
-        <p><small>特色: 被动源、经济、可靠、环保</small></p>
-        <p><small>Parsimony</small></p>
-      </td>
-      <td style="vertical-align: top; width: 670px;">
-        <img style="width: 668px; height: 317px;" alt="background" src="head.png"><br>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<div class="container">
 
-<!-- Navigation bar -->
-<table style="text-align: left; width: 1090px; margin: auto; height: 43px;" border="0" cellpadding="2" cellspacing="2">
-  <tbody>
-    <tr>
-      <td style="text-align: center; width: 99px; background-color: #ccffff;"><a href="index.html"><b>主页</b></a></td>
-      <td style="text-align: center; width: 176px; background-color: #ccffff;"><a href="members.html"><b>成员</b></a></td>
-      <td style="text-align: center; width: 176px; background-color: #ccffff;"><a href="research.html"><b>研究方向</b></a></td>
-      <td style="text-align: center; width: 175px; background-color: #ccffff;"><a href="publications.html"><b>成果介绍</b></a></td>
-      <td style="text-align: center; width: 176px; background-color: #ccffff;"><a href="fieldtrips.html"><b>野外活动</b></a></td>
-      <td style="text-align: center; width: 160px; background-color: #ccffff;"><a href="contact.html"><b>联系我们</b></a></td>
-    </tr>
-  </tbody>
-</table>
+    <!-- Header -->
+    <div class="header">
+        <div class="header-text">
+            <h1>PARSIMONS: Passive And Reliable Seismic Imaging and Monitoring Of the Near Surface</h1>
+            <h2>近地表结构被动源地震成像及监测</h2>
+            <small>特色: 被动源、经济、可靠、环保</small>
+        </div>
+        <div class="header-image">
+            <img src="head.png" alt="Banner">
+        </div>
+    </div>
 
-<div style="text-align: center;"><br></div>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">主页</a>
+        <a href="members.html">成员</a>
+        <a href="research.html">研究方向</a>
+        <a href="publications.html">成果介绍</a>
+        <a href="fieldtrips.html" class="active">野外活动</a>
+        <a href="contact.html">联系我们</a>
+    </nav>
 
-<!-- Field Trips content -->
-<table style="text-align: left; width: 1076px; margin: auto;" border="0" cellpadding="5" cellspacing="5">
-<tbody>
-<tr>
-  <td style="vertical-align: top; width: 550px;">
-    <b>2021年华南野外：南岭成矿带</b><br>
-    <img style="width: 500px; height: 380px;" alt="SouthChina2021" src="SouthChina2021.jpg"><br>
-    <p>整装待发</p>
+    <!-- Field Trips -->
+    <section>
+        <div class="trip">
+            <h3>2021 华南野外：南岭成矿带</h3>
+            <img src="SouthChina2021.jpg" alt="South China 2021">
+            <p>整装待发</p>
+        </div>
+        <div class="trip">
+            <img src="butai2.jpg" alt="Field Deployment">
+            <p>野外台站布设</p>
+        </div>
+        <div class="trip">
+            <img src="lilunxuexi.jpg" alt="Theory Study">
+            <p>室内理论学习</p>
+        </div>
+        <div class="trip">
+            <h3>2022 华南野外：莲花山断裂及成矿带</h3>
+        </div>
+        <div class="trip">
+            <h3>2025 华南野外：郴州-临武断裂</h3>
+        </div>
+    </section>
 
-    <img style="width: 500px; height: 380px;" alt="Station Deployment" src="butai2.jpg"><br>
-    <p>野外台站布设</p>
-
-    <img style="width: 500px; height: 380px;" alt="Theory Study" src="lilunxuexi.jpg"><br>
-    <p>室内理论学习</p>
-
-    <b>2022年华南野外：莲花山断裂及成矿带</b><br>
-    <p>详细活动内容可补充说明</p>
-
-    <b>2025年华南野外：郴州-临武断裂</b><br>
-    <p>详细活动内容可补充说明</p>
-  </td>
-</tr>
-</tbody>
-</table>
-
-<div style="text-align: center;"><br></div>
+</div>
 </body>
 </html>
