@@ -19,6 +19,8 @@ header {
     align-items: center;
     padding: 20px;
     background: white;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 header h1 {
@@ -27,7 +29,7 @@ header h1 {
 }
 
 header img {
-    max-width: 50%;
+    max-width: 45%;
     height: auto;
 }
 
@@ -49,41 +51,51 @@ nav a:hover {
 }
 
 .container {
-    width: 90%;
+    width: 95%;
     max-width: 1100px;
-    margin: 30px auto;
+    margin: 20px auto;
 }
 
 .section-title {
     font-size: 20px;
-    margin-bottom: 15px;
+    margin: 25px 0 15px 0;
     border-left: 4px solid #0077b6;
     padding-left: 10px;
 }
 
 .member {
     display: flex;
-    gap: 20px;
-    margin-bottom: 25px;
+    gap: 15px;
+    margin-bottom: 20px;
     background: white;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
 }
 
 .member img {
-    width: 120px;
-    height: 160px;
+    width: 110px;
+    height: 140px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 6px;
 }
 
 .member-info {
     flex: 1;
 }
 
-.member-info b {
-    font-size: 16px;
+.timeline p {
+    margin: 8px 0;
+    padding-left: 10px;
+    border-left: 3px solid #ccc;
+}
+
+.undergrad {
+    background: #fafafa;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #555;
 }
 
 .footer {
@@ -119,48 +131,55 @@ nav a:hover {
     <div class="section-title">团队成员</div>
 
     <div class="member">
-        <img src="fhj.jpg" alt="Hongjian Fang">
+        <img src="fhj.jpg">
         <div class="member-info">
             <b>方洪健</b><br>
             Email: fanghj23 at mail2.sysu.edu.cn<br>
-            研究方向：Seismic tomography, Earthquake detection and relocation, Array analysis, Microseism
+            Seismic tomography, Earthquake detection, Array analysis
         </div>
     </div>
 
     <div class="member">
-        <img src="zhanghan.jpg" alt="Han Zhang">
+        <img src="zhanghan.jpg">
         <div class="member-info">
             <b>张晗</b><br>
-            Email: zhangh796 at mail2.sysu.edu.cn<br>
-            研究方向：Ambient noise tomography, Body wave extraction
+            Ambient noise tomography, Body wave extraction
         </div>
     </div>
 
     <div class="member">
-        <img src="lwx.png" alt="Wanxin Luo">
+        <img src="lwx.png">
         <div class="member-info">
             <b>罗万鑫</b><br>
-            Email: lwx29 at mail2.sysu.edu.cn<br>
-            研究方向：Ambient noise monitoring
+            Ambient noise monitoring
         </div>
     </div>
 
     <div class="member">
-        <img src="kwj.png" alt="Weijie Kang">
+        <img src="kwj.png">
         <div class="member-info">
             <b>康伟杰</b><br>
-            Email: kangwj3 at mail2.sysu.edu.cn<br>
-            研究方向：Measuring in-situ Vp/Vs with clustering analysis
+            In-situ Vp/Vs measurement
         </div>
     </div>
 
     <div class="section-title">已毕业研究生</div>
-    <p><b>范方</b>（2020–2022）— 山东菏泽地震监测中心</p>
-    <p><b>段超</b>（2021–2024）— 南方航空</p>
-    <p><b>欧阳凯</b>（2022–2025）— 江西吉安生态环境局</p>
+    <div class="timeline">
+        <p><b>范方</b>（2020–2022）— 山东菏泽地震监测中心</p>
+        <p><b>段超</b>（2021–2024）— 南方航空</p>
+        <p><b>欧阳凯</b>（2022–2025）— 江西吉安生态环境局</p>
+    </div>
+
+    <div class="section-title">联合指导研究生</div>
+    <div class="timeline">
+        <p><b>毕昊</b>（2020–2023）— 香港EGS-Survey</p>
+        <p><b>李明芮</b>（2020–2023）— 帝国理工学院</p>
+    </div>
 
     <div class="section-title">本科毕业生</div>
-    <p>杨书菊（中山大学研究生），向宥羽（中国科学技术大学研究生）</p>
+    <div class="undergrad">
+        杨书菊（中山大学研究生），向宥羽（中国科学技术大学研究生）
+    </div>
 
 </div>
 
