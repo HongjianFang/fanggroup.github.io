@@ -1,70 +1,198 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-<meta content="text/html; charset=utf-8" http-equiv="content-type">
-<title>PARSIMONS: Passive And Reliable Seismic Imaging and Monitoring Of the Near Surface</title>
-<link rel="stylesheet" href="teststyle.css" type="text/css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PARSIMONS Lab - 野外活动</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: white;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 22px;
+    margin: 0;
+}
+
+header p {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+    color: #555;
+}
+
+header img {
+    max-width: 45%;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #0077b6;
+}
+
+nav a {
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #023e8a;
+}
+
+.container {
+    width: 95%;
+    max-width: 1100px;
+    margin: 20px auto;
+}
+
+.section-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    border-left: 4px solid #0077b6;
+    padding-left: 10px;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #777;
+}
+
+@media (max-width: 900px) {
+    .grid-3 {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
 </head>
+
 <body>
 
-<!-- Header -->
-<table style="text-align: left; height: 149px; margin-left: auto; width: 1045px; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
-  <tbody>
-    <tr>
-      <td style="vertical-align: top; width: 361px;">
-        <h4 style="width: 390px;"><b>PARSIMONS: Passive And Reliable Seismic Imaging and Monitoring Of the Near Surface</b></h4>
-        <h4 style="width: 390px;"><b>近地表结构被动源地震成像及监测</b></h4>
-        <p><small>特色: 被动源、经济、可靠、环保</small></p>
-        <p><small>Parsimony</small></p>
-      </td>
-      <td style="vertical-align: top; width: 670px;">
-        <img style="width: 668px; height: 317px;" alt="background" src="head.png"><br>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<header>
+    <div>
+        <h1>PARSIMONS Lab</h1>
+        <p>Passive And Reliable Seismic Imaging and Monitoring Of the Near Surface</p>
+        <p>利用天然地震波揭示地球内部结构，深化对地球的认识并助力保护我们的星球</p>
+    </div>
+    <img src="head.png" alt="Lab banner">
+</header>
 
-<!-- Navigation bar -->
-<table style="text-align: left; width: 1090px; margin: auto; height: 43px;" border="0" cellpadding="2" cellspacing="2">
-  <tbody>
-    <tr>
-      <td style="text-align: center; width: 99px; background-color: #ccffff;"><a href="index.html"><b>主页</b></a></td>
-      <td style="text-align: center; width: 176px; background-color: #ccffff;"><a href="members.html"><b>成员</b></a></td>
-      <td style="text-align: center; width: 176px; background-color: #ccffff;"><a href="research.html"><b>研究方向</b></a></td>
-      <td style="text-align: center; width: 175px; background-color: #ccffff;"><a href="publications.html"><b>成果介绍</b></a></td>
-      <td style="text-align: center; width: 176px; background-color: #ccffff;"><a href="fieldtrips.html"><b>野外活动</b></a></td>
-      <td style="text-align: center; width: 160px; background-color: #ccffff;"><a href="contact.html"><b>联系我们</b></a></td>
-    </tr>
-  </tbody>
-</table>
+<nav>
+    <a href="index.html">主页</a>
+    <a href="members.html">成员</a>
+    <a href="research.html">研究方向</a>
+    <a href="publications.html">成果</a>
+    <a href="fieldtrips.html" class="active">野外活动</a>
+    <a href="contact.html">联系我们</a>
+</nav>
 
-<div style="text-align: center;"><br></div>
+<div class="container">
 
-<!-- Field Trips content -->
-<table style="text-align: left; width: 1076px; margin: auto;" border="0" cellpadding="5" cellspacing="5">
-<tbody>
-<tr>
-  <td style="vertical-align: top; width: 550px;">
-    <b>2021年华南野外：南岭成矿带</b><br>
-    <img style="width: 500px; height: 380px;" alt="SouthChina2021" src="SouthChina2021.jpg"><br>
-    <p>整装待发</p>
+    <div class="section-title">2021年华南野外：南岭成矿带</div>
+    <div class="grid-3">
+        <div class="card">
+            <img src="SouthChina2021.jpg" alt="整装待发">
+            <p>整装待发</p>
+        </div>
+        <div class="card">
+            <img src="butai2.jpg" alt="野外台站布设">
+            <p>野外台站布设</p>
+        </div>
+        <div class="card">
+            <img src="lilunxuexi.jpg" alt="室内理论学习">
+            <p>室内理论学习</p>
+        </div>
+    </div>
 
-    <img style="width: 500px; height: 380px;" alt="Station Deployment" src="butai2.jpg"><br>
-    <p>野外台站布设</p>
+    <div class="section-title">2022年华南野外：莲花山断裂及成矿带</div>
+    <div class="grid-3">
+        <div class="card">
+            <img src="lianhuashan.jpg" alt="莲花山野外">
+            <p>莲花山断裂台阵布设</p>
+        </div>
+        <div class="card">
+            <img src="field_team2.jpg" alt="团队工作">
+            <p>团队工作</p>
+        </div>
+        <div class="card">
+            <img src="field_equipment.jpg" alt="设备使用">
+            <p>设备使用</p>
+        </div>
+    </div>
 
-    <img style="width: 500px; height: 380px;" alt="Theory Study" src="lilunxuexi.jpg"><br>
-    <p>室内理论学习</p>
+    <div class="section-title">2025年华南野外：郴州-临武断裂</div>
+    <div class="grid-3">
+        <div class="card">
+            <img src="chenzhou2025.jpg" alt="郴州断裂野外">
+            <p>郴州-临武断裂布设</p>
+        </div>
+        <div class="card">
+            <img src="team2025.jpg" alt="团队">
+            <p>团队成员</p>
+        </div>
+        <div class="card">
+            <img src="equipment2025.jpg" alt="设备">
+            <p>设备与测量</p>
+        </div>
+    </div>
 
-    <b>2022年华南野外：莲花山断裂及成矿带</b><br>
-    <p>详细活动内容可补充说明</p>
+</div>
 
-    <b>2025年华南野外：郴州-临武断裂</b><br>
-    <p>详细活动内容可补充说明</p>
-  </td>
-</tr>
-</tbody>
-</table>
+<div class="footer">
+    © PARSIMONS Lab
+</div>
 
-<div style="text-align: center;"><br></div>
 </body>
 </html>
