@@ -12,35 +12,42 @@
         background-color: #f8f9fa;
         color: #333;
     }
+
     .container {
         max-width: 1100px;
         margin: 0 auto;
         padding: 20px;
     }
-    header {
+
+    /* Banner with overlay */
+    .banner {
+        position: relative;
+        background: url('head.png') center/cover no-repeat;
+        height: 250px;
+        border-radius: 10px;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 30px;
+        color: #fff;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
     }
-    header h1, header h2 {
+    .banner h1 {
         margin: 0;
-    }
-    header h1 {
-        font-size: 24px;
+        font-size: 28px;
         font-weight: bold;
     }
-    header h2 {
-        font-size: 18px;
+    .banner h2 {
+        margin: 5px 0 0 0;
+        font-size: 20px;
         font-weight: bold;
-        color: #555;
     }
-    header img {
-        max-width: 600px;
-        height: auto;
+    .banner small {
+        font-size: 14px;
     }
+
     nav {
-        margin-top: 15px;
+        margin: 20px 0;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -64,6 +71,7 @@
         background-color: #00a89f;
         color: #fff;
     }
+
     section {
         display: flex;
         flex-wrap: wrap;
@@ -97,15 +105,15 @@
 <body>
 
 <div class="container">
-    <header>
-        <div>
-            <h1>PARSIMONS: Passive And Reliable Seismic Imaging and Monitoring Of the Near Surface</h1>
-            <h2>近地表结构被动源地震成像及监测</h2>
-            <p><small>特色: 被动源、经济、可靠、环保</small></p>
-        </div>
-        <img src="head.png" alt="background">
-    </header>
 
+    <!-- Banner -->
+    <div class="banner">
+        <h1>PARSIMONS: Passive And Reliable Seismic Imaging and Monitoring Of the Near Surface</h1>
+        <h2>近地表结构被动源地震成像及监测</h2>
+        <small>特色: 被动源、经济、可靠、环保</small>
+    </div>
+
+    <!-- Navigation -->
     <nav>
         <a href="index.html" class="active">主页</a>
         <a href="members.html">成员</a>
@@ -115,6 +123,7 @@
         <a href="contact.html">联系我们</a>
     </nav>
 
+    <!-- Introduction -->
     <section>
         <div class="text-block">
             <p>近地表（<10公里）是地球大气圈、水圈、生物圈及固体地球相互作用及物质交换的主要场所，建立其结构模型对油气及矿产资源探索、地震机制、地震灾害等研究至关重要。</p>
@@ -126,13 +135,11 @@
         </div>
     </section>
 
+    <!-- Latest Research -->
     <section>
         <div class="text-block">
             <h3>最新研究</h3>
             <p>研究组利用密集台阵接收函数成像方法获得南岭成矿带高精度莫霍面及壳内间断面结构模型。结果显示该区域郴州-临武断裂周围莫霍面转换波振幅较小，对应着莫霍面转换厚度较大，可能与地幔物质侵入促进钨锡矿成矿有关。相关结果发表在 Geophysical Research Letters 上。</p>
-        </div>
-        <div class="image-block">
-            <img src="rf.jpg" alt="RF image">
         </div>
     </section>
 
