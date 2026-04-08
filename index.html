@@ -5,102 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PARSIMONS Lab</title>
 
-<style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f5f7fa;
-    color: #333;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background: white;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-header h1 {
-    font-size: 22px;
-    margin: 0;
-}
-
-header p {
-    margin: 5px 0 0 0;
-    font-size: 14px;
-    color: #555;
-}
-
-header img {
-    max-width: 45%;
-    height: auto;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: #0077b6;
-}
-
-nav a {
-    color: white;
-    padding: 12px 20px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    background-color: #023e8a;
-}
-
-.container {
-    width: 95%;
-    max-width: 1100px;
-    margin: 20px auto;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: 20px;
-}
-
-.section {
-    background: white;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
-}
-
-.section-title {
-    font-size: 18px;
-    margin-bottom: 10px;
-    border-left: 4px solid #0077b6;
-    padding-left: 10px;
-}
-
-.highlight img {
-    width: 100%;
-    border-radius: 6px;
-    margin-top: 10px;
-}
-
-.footer {
-    text-align: center;
-    padding: 20px;
-    font-size: 14px;
-    color: #777;
-}
-
-@media (max-width: 800px) {
-    .grid {
-        grid-template-columns: 1fr;
-    }
-}
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -115,7 +20,7 @@ nav a:hover {
 </header>
 
 <nav>
-    <a href="index.html">主页</a>
+    <a href="index.html" class="active">主页</a>
     <a href="members.html">成员</a>
     <a href="research.html">研究方向</a>
     <a href="publications.html">成果</a>
