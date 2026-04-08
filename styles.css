@@ -416,6 +416,40 @@ nav a.active {
     color: #556070;
 }
 
+.footer .footer-inner p {
+    margin: 4px 0;
+}
+
+.footer-links {
+    list-style: none;
+    margin: 8px 0 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 6px;
+}
+
+.footer-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 8px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background: transparent;
+}
+
+.footer-links a:hover {
+    text-decoration: none;
+    background: rgba(11, 121, 183, 0.08);
+    border-color: rgba(11, 121, 183, 0.14);
+}
+
+.footer-links a:focus-visible {
+    outline: none;
+    box-shadow: var(--ring);
+}
+
 .footer-bottom {
     width: min(96%, var(--maxw));
     margin: 14px auto 0;
