@@ -6,9 +6,17 @@
 <title>PARSIMONS Lab - 联系我们</title>
 
 <link rel="stylesheet" href="styles.css">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="site.webmanifest">
+<meta name="description" content="PARSIMONS Lab 联系方式与招生信息。欢迎邮件联系与申请加入。">
+<meta property="og:title" content="PARSIMONS Lab - 联系我们">
+<meta property="og:description" content="联系方式与招生信息。欢迎邮件联系与申请加入。">
+<meta property="og:type" content="website">
 </head>
 
 <body>
+
+<a class="skip-link" href="#main">跳到主要内容</a>
 
 <header>
     <div>
@@ -19,7 +27,7 @@
     <img src="head.png" alt="Lab banner">
 </header>
 
-<nav>
+<nav aria-label="主导航">
     <a href="index.html">主页</a>
     <a href="members.html">成员</a>
     <a href="research.html">研究方向</a>
@@ -28,27 +36,77 @@
     <a href="contact.html" class="active">联系我们</a>
 </nav>
 
-<div class="container narrow">
+<main id="main" class="container narrow">
+
+    <h2 class="page-title">联系我们</h2>
 
     <div class="section-title">课题组联系方式</div>
-    <div class="card">
-        <p><strong>负责人：</strong>方洪健</p>
-        <p><strong>单位：</strong>中山大学地球科学与工程学院</p>
-        <p><strong>地址：</strong>广东省珠海市唐家湾中山大学珠海校区，海琴4号楼A527</p>
-        <p><strong>邮箱：</strong>fanghj23 at mail.sysu.edu.cn</p>
-        <p>欢迎联系（邮件联系时记得替换邮箱中的 "at" 为 "@")</p>
+    <div class="contact-grid">
+        <div class="card">
+            <dl class="kv">
+                <dt>负责人</dt>
+                <dd>方洪健</dd>
+                <dt>单位</dt>
+                <dd>中山大学地球科学与工程学院</dd>
+                <dt>地址</dt>
+                <dd>广东省珠海市唐家湾中山大学珠海校区，海琴4号楼 A527</dd>
+                <dt>邮箱</dt>
+                <dd>fanghj23 at mail.sysu.edu.cn（将 “at” 替换为 “@”）</dd>
+            </dl>
+            <div class="actions" style="margin-top:12px;">
+                <a class="btn btn-secondary" href="members.html">团队成员</a>
+                <a class="btn btn-secondary" href="publications.html">成果</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="section-title" style="margin-bottom:10px;">位置</div>
+            <p class="muted" style="margin-top:-4px;">珠海校区 · 海琴4号楼</p>
+            <p>
+                <a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6%E7%8F%A0%E6%B5%B7%E6%A0%A1%E5%8C%BA%20%E6%B5%B7%E7%90%B44%E5%8F%B7%E6%A5%BC" target="_blank" rel="noopener noreferrer">
+                    打开地图
+                </a>
+            </p>
+            <p class="meta">如果你使用的是国内地图服务，也可以复制上面的地址进行搜索。</p>
+        </div>
     </div>
 
     <div class="section-title">招生信息</div>
     <div class="card">
-        <p>本课题组每年计划招收 1-2 名硕士生及 1 名博士生（地球物理或资源与环境专业），</p>
-        <p>我们期待你的加入！</p>
+        <p><strong>计划名额：</strong>每年 1–2 名硕士生，1 名博士生（地球物理或资源与环境专业）。</p>
+        <p><strong>你将参与：</strong>被动源成像与监测、台阵数据处理、方法研究与区域应用等。</p>
+        <p><strong>申请方式：</strong>请邮件简要介绍背景，并附上简历（CV）、成绩单（可选）及代表性成果（如有）。</p>
+        <div class="actions">
+            <a class="btn btn-primary" href="mailto:fanghj23@mail.sysu.edu.cn">发邮件申请</a>
+            <a class="btn btn-secondary" href="research.html">了解研究方向</a>
+        </div>
     </div>
 
-</div>
+</main>
 
 <div class="footer">
-    © PARSIMONS Lab
+    <div class="footer-inner">
+        <div>
+            <div class="footer-title">PARSIMONS Lab</div>
+            <p>Passive And Reliable Seismic Imaging and Monitoring Of the Near Surface</p>
+            <p class="meta">中山大学 · 地球科学与工程学院（珠海）</p>
+        </div>
+        <div>
+            <div class="footer-title">快速链接</div>
+            <p><a href="research.html">研究方向</a></p>
+            <p><a href="publications.html">成果</a></p>
+            <p><a href="members.html">成员</a></p>
+        </div>
+        <div>
+            <div class="footer-title">联系</div>
+            <p class="meta">fanghj23 at mail.sysu.edu.cn</p>
+            <p><a href="contact.html">招生与联系信息</a></p>
+            <p><a href="https://scholar.google.com/citations?hl=en&user=kUqxjY4AAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a></p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div>© PARSIMONS Lab</div>
+        <div class="meta">Last updated: 2026-04-08</div>
+    </div>
 </div>
 
 </body>

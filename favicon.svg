@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="PARSIMONS Lab">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b79b7"/>
+      <stop offset="1" stop-color="#075985"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#g)"/>
+  <path d="M28 84c14-24 26-8 36-24s22-6 36-28" fill="none" stroke="rgba(255,255,255,.9)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M30 52h22" stroke="rgba(255,255,255,.85)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M30 64h30" stroke="rgba(255,255,255,.85)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M30 76h18" stroke="rgba(255,255,255,.85)" stroke-width="8" stroke-linecap="round"/>
+</svg>

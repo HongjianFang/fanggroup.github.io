@@ -3,12 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PARSIMONS Lab</title>
+<title>PARSIMONS Lab - 成员</title>
 
 <link rel="stylesheet" href="styles.css">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="site.webmanifest">
+<meta name="description" content="PARSIMONS Lab 团队成员、已毕业研究生与联合指导学生信息。">
+<meta property="og:title" content="PARSIMONS Lab - 成员">
+<meta property="og:description" content="团队成员、已毕业研究生与联合指导学生信息。">
+<meta property="og:type" content="website">
 </head>
 
 <body>
+
+<a class="skip-link" href="#main">跳到主要内容</a>
 
 <header>
     <div>
@@ -19,7 +27,7 @@
     <img src="head.png" alt="Lab banner">
 </header>
 
-<nav>
+<nav aria-label="主导航">
     <a href="index.html">主页</a>
     <a href="members.html" class="active">成员</a>
     <a href="research.html">研究方向</a>
@@ -28,12 +36,12 @@
     <a href="contact.html">联系我们</a>
 </nav>
 
-<div class="container">
+<main id="main" class="container">
 
-    <div class="section-title">团队成员</div>
+    <h2 class="page-title">团队成员</h2>
 
     <div class="member">
-        <img src="fhj.jpg">
+        <img src="fhj.jpg" alt="方洪健">
         <div class="member-info">
             <b>方洪健</b><br>
             Email: fanghj23 at mail2.sysu.edu.cn<br>
@@ -42,7 +50,7 @@
     </div>
 
     <div class="member">
-        <img src="zhanghan.jpg">
+        <img src="zhanghan.jpg" alt="张晗">
         <div class="member-info">
             <b>张晗</b><br>
             Ambient noise tomography, Body wave extraction
@@ -50,7 +58,7 @@
     </div>
 
     <div class="member">
-        <img src="lwx.png">
+        <img src="lwx.png" alt="罗万鑫">
         <div class="member-info">
             <b>罗万鑫</b><br>
             Ambient noise monitoring
@@ -58,7 +66,7 @@
     </div>
 
     <div class="member">
-        <img src="kwj.png">
+        <img src="kwj.png" alt="康伟杰">
         <div class="member-info">
             <b>康伟杰</b><br>
             In-situ Vp/Vs measurement
@@ -83,10 +91,32 @@
         杨书菊（中山大学研究生），向宥羽（中国科学技术大学研究生）
     </div>
 
-</div>
+</main>
 
 <div class="footer">
-    © PARSIMONS Lab
+    <div class="footer-inner">
+        <div>
+            <div class="footer-title">PARSIMONS Lab</div>
+            <p>Passive And Reliable Seismic Imaging and Monitoring Of the Near Surface</p>
+            <p class="meta">中山大学 · 地球科学与工程学院（珠海）</p>
+        </div>
+        <div>
+            <div class="footer-title">快速链接</div>
+            <p><a href="research.html">研究方向</a></p>
+            <p><a href="publications.html">成果</a></p>
+            <p><a href="fieldtrips.html">野外活动</a></p>
+        </div>
+        <div>
+            <div class="footer-title">联系</div>
+            <p class="meta">fanghj23 at mail.sysu.edu.cn</p>
+            <p><a href="contact.html">招生与联系信息</a></p>
+            <p><a href="https://scholar.google.com/citations?hl=en&user=kUqxjY4AAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a></p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div>© PARSIMONS Lab</div>
+        <div class="meta">Last updated: 2026-04-08</div>
+    </div>
 </div>
 
 </body>
